@@ -1,0 +1,67 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Food Ordering App</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <h1>Welcome to Our Food Ordering App</h1>
+      
+      <div class="menu">
+          <div class="menu-item">
+              <img src="pizza.jpg" alt="Pizza" class="item-image">
+              <h3>Pizza</h3>
+              <p>Price: ₹800.00</p>
+              <button onclick="addItem('Pizza', 800)">Add to Cart</button>
+          </div>
+          <div class="menu-item">
+              <img src="burger.jpg" alt="Burger" class="item-image">
+              <h3>Burger</h3>
+              <p>Price: ₹600.00</p>
+              <button onclick="addItem('Burger', 600)">Add to Cart</button>
+          </div>
+          <div class="menu-item">
+              <img src="pasta.jpg" alt="Pasta" class="item-image">
+              <h3>Pasta</h3>
+              <p>Price: ₹640.00</p>
+              <button onclick="addItem('Pasta', 640)">Add to Cart</button>
+          </div>
+          <div class="menu-item">
+              <img src="coffee.jpg" alt="Coffee" class="item-image">
+              <h3>Coffee</h3>
+              <p>Price: ₹300.00</p>
+              <button onclick="addItem('Coffee', 300)">Add to Cart</button>
+          </div>
+          <div class="menu-item">
+              <img src="sandwich.jpg" alt="Sandwich" class="item-image">
+              <h3>Sandwich</h3>
+              <p>Price: ₹350.00</p>
+              <button onclick="addItem('Sandwich', 350)">Add to Cart</button>
+          </div>
+          <div class="menu-item">
+              <img src="fries.jpg" alt="Fries" class="item-image">
+              <h3>Fries</h3>
+              <p>Price: ₹900.00</p>
+              <button onclick="addItem('Fries', 900)">Add to Cart</button>
+          </div>
+      </div>
+      
+      <div class="cart">
+          <h2>Your Cart</h2>
+          <ul id="cart-items"></ul>
+          <p>Total Amount: ₹<span id="total-amount">0</span></p>
+          <button onclick="placeOrder()">Place Order</button>
+      </div>
+  
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+      <script src="script.js"></script>
+
+
+  </body>
+  </html>
+  
